@@ -6,10 +6,9 @@ export const SideMenuContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   background-color: white;
-  width: 15%;
-  padding: 1rem;
+  padding: 2rem;
   gap: 2rem;
-  height: 80vh;
+  height: 500px;
 `;
 
 export const SideMenuRoles = styled.div`
@@ -25,9 +24,10 @@ export const SideMenuRoles = styled.div`
   }
 `;
 
-export const SideMenuSocialMedia = styled.div`
+export const SideMenuSocialMedia = styled.a`
   display: flex;
   gap: 1rem;
+  cursor: pointer;
 `;
 
 export const Divider = styled.div`

@@ -1,16 +1,16 @@
 export interface IAptitudes {
-  aptitudes: [
-    {
-      name?: string;
-      proficiency?: string;
-    },
-  ];
+  name?: string;
+  proficiency?: string;
 }
 
-export function Aptitudes({ aptitudes }: IAptitudes) {
+export interface IAptitude {
+  aptitude: IAptitudes[];
+}
+
+function Aptitudes({ aptitude }: IAptitude) {
   return (
     <>
-      {aptitudes.map(item => (
+      {aptitude.map(item => (
         <div>
           {item.name}
           {item.proficiency}
@@ -19,3 +19,5 @@ export function Aptitudes({ aptitudes }: IAptitudes) {
     </>
   );
 }
+
+export default Aptitudes;

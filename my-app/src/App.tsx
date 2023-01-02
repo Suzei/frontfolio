@@ -11,6 +11,9 @@ function App() {
       <GlobalStyle />
       <AppContainer>
         <SideMenu />
+        <main>
+          <h2>oiasdasdassa</h2>
+        </main>
       </AppContainer>
     </ThemeProvider>
   );

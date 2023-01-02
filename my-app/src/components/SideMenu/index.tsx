@@ -6,7 +6,7 @@ import {
   SideMenuSocialMedia,
 } from './styles';
 import { LinkedinLogo, GithubLogo, RocketLaunch } from 'phosphor-react';
-import { Aptitudes, IAptitudes } from '../Aptitudes';
+import Aptitudes, { IAptitude, IAptitudes } from '../Aptitudes';
 
 export function SideMenu() {
   const socialMedia = [
@@ -35,17 +35,16 @@ export function SideMenu() {
         />
         <strong>Vinícius Silva</strong>
         <span>Desenvolvedor Front-End</span>
-
         <SideMenuSocialMedia>
           {socialMedia.map(item => (
-            <SocialMediaLogos socialMediaName={item.logo} />
+            <SideMenuSocialMedia href={item.link}>
+              <SocialMediaLogos socialMediaName={item.logo} />
+            </SideMenuSocialMedia>
           ))}
         </SideMenuSocialMedia>
       </SideMenuRoles>
 
       <Divider />
-
-      <Aptitudes aptitudes={aptitudes} />
     </SideMenuContainer>
   );
 }
