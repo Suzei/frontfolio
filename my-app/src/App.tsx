@@ -1,20 +1,14 @@
-import { ButtonType } from './components/ButtonType';
 import GlobalStyle from './styles/global';
 import { ThemeProvider } from 'styled-components';
 import { DefaultTheme } from './styles/theme';
 import { AppContainer } from './styles/App';
-import { SideMenu } from './components/SideMenu';
+import { AppRoutes } from './routes/routes';
 
 function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyle />
-      <AppContainer>
-        <SideMenu />
-        <main>
-          <h2>oiasdasdassa</h2>
-        </main>
-      </AppContainer>
+      <AppRoutes />
     </ThemeProvider>
   );
 }

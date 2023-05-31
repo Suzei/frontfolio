@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
 
      margin: 0;
      padding: 0;
-     font-family: Open-Sans, Helvetica, Sans-Serif;
+     font-family: 'Roboto', 'sans-serif';
      -webkit-font-smoothing: antialiased;
    }
 
@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #E5E5E5;
    }
 
+   h1, h2, h3, h4, h5, h6  {
+    font-family: 'Montserrat Alternates';
+   }
 `;
 
 export default GlobalStyle;
