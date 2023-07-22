@@ -1,24 +1,24 @@
 import styled from 'styled-components';
+import Layer from '../../assets/layered-steps-haikei.png';
 
 export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
   padding: 8rem 8rem;
   color: white;
+  height: 100vh;
 
   gap: 2rem;
-  background-color: beige;
-  flex-wrap: wrap;
-
-  background: rgb(72, 11, 103);
-  background: linear-gradient(
+  background: url(${Layer});
+  background-color: linear-gradient(
     146deg,
     rgba(72, 11, 103, 1) 2%,
     rgba(17, 2, 37, 1) 70%
   );
+  background-size: 100%;
+  flex-wrap: wrap;
 
   img {
     max-width: 350px;
@@ -33,8 +33,7 @@ export const HeroContainer = styled.div`
 `;
 export const HeroTitle = styled.div`
   display: flex;
-  align-items: center;
-  padding: 1rem 0;
+  flex-direction: column;
   gap: 1rem;
 
   h1 {
@@ -43,9 +42,18 @@ export const HeroTitle = styled.div`
 
   span {
     font-weight: 100;
-    border-radius: 6px;
     font-weight: 400;
     font-size: 0.8rem;
+  }
+
+  p {
+    max-width: 500px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 `;
 
@@ -53,6 +61,7 @@ export const HeroButtons = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding: 1rem 0;
   font-size: 1.2rem;
 
   button {

@@ -5,12 +5,21 @@ export function Hero() {
     <HeroContainer>
       <div>
         <HeroTitle>
-          <h1>Vinícius Silva</h1>
-          <span>Dev Full-Stack</span>
+          <div>
+            <h1>Vinícius Silva</h1>
+            <span>Dev Full-Stack</span> <br />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. eveniet
+            libero, a ducimus consequatur commodi consequuntur quos, quos,
+            voluptates cumque sit itaque deleniti, fuga natus ab! Et maiores sed
+            unde.
+          </p>
         </HeroTitle>
         <HeroButtons>
           <button>Baixar CV</button>
-          <button>Fale comigo!</button>
+          <button>Contato</button>
         </HeroButtons>
       </div>
       <img src={Kiryu} />
